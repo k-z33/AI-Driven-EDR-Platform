@@ -5,3 +5,4 @@
 __pycache__/
 *.pyc
 config/secrets*
+edr-backup.tar.gz
