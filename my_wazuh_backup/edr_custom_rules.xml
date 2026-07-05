@@ -1,0 +1,54 @@
+<group name="edr_detection">
+
+  <rule id="111001" level="10">
+    <match>powershell</match>
+    <description>EDR: PowerShell activity detected</description>
+  </rule>
+
+  <rule id="111002" level="12">
+    <match>wmic</match>
+    <description>EDR: WMI execution detected</description>
+  </rule>
+
+  <rule id="111003" level="10">
+    <if_sid>5402</if_sid>
+    <description>EDR: Command shell detected</description>
+  </rule>
+
+  <rule id="111004" level="14">
+    <match>-enc</match>
+    <description>Encoded PowerShell detected</description>
+  </rule>
+
+  <rule id="111005" level="14">
+    <match>winword</match>
+    <description>Office spawning process</description>
+  </rule>
+
+  <rule id="111006" level="12">
+    <match>downloadstring</match>
+    <description>Suspicious download activity</description>
+  </rule>
+
+  <rule id="111007" level="11">
+    <match>wscript</match>
+    <description>Script execution detected</description>
+  </rule>
+
+  <rule id="111008" level="12">
+    <match>schtasks</match>
+    <description>Scheduled task modification</description>
+  </rule>
+
+  <rule id="111009" level="15">
+    <if_sid>5902</if_sid>
+    <match>useradd|edr_fake_attacker_user</match>
+    <description>User creation detected</description>
+  </rule>
+
+  <rule id="111010" level="13">
+    <match>del /f</match>
+    <description>Forced deletion detected</description>
+  </rule>
+
+</group>

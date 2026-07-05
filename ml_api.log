@@ -1,0 +1,182 @@
+2026-05-22 16:43:32,465 [INFO] ✅ Both models loaded successfully
+
+==================================================
+  EDR ML API Server
+==================================================
+  GET  http://localhost:8080/health
+  POST http://localhost:8080/predict
+  POST http://localhost:8080/batch
+==================================================
+
+ * Serving Flask app 'ml_api'
+ * Debug mode: off
+2026-05-22 16:43:32,501 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.6:8080
+2026-05-22 16:43:32,501 [INFO] [33mPress CTRL+C to quit[0m
+2026-05-22 16:43:46,462 [INFO] 127.0.0.1 - - [22/May/2026 16:43:46] "GET /health HTTP/1.1" 200 -
+2026-05-22 16:44:22,732 [INFO] 127.0.0.1 - - [22/May/2026 16:44:22] "[33mGET /healt HTTP/1.1[0m" 404 -
+2026-05-22 16:44:22,763 [INFO] 127.0.0.1 - - [22/May/2026 16:44:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-22 16:44:32,770 [INFO] 127.0.0.1 - - [22/May/2026 16:44:32] "GET /health HTTP/1.1" 200 -
+2026-05-22 16:45:57,680 [INFO] PREDICT | severity=CRITICAL threat=RANSOMWARE score=-0.0328
+2026-05-22 16:45:57,681 [INFO] 127.0.0.1 - - [22/May/2026 16:45:57] "POST /predict HTTP/1.1" 200 -
+2026-05-22 16:46:09,514 [INFO] PREDICT | severity=LOW threat=BENIGN score=0.2337
+2026-05-22 16:46:09,514 [INFO] 127.0.0.1 - - [22/May/2026 16:46:09] "POST /predict HTTP/1.1" 200 -
+2026-05-23 17:07:29,896 [INFO] 127.0.0.1 - - [23/May/2026 17:07:29] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2026-05-23 18:14:53,290 [INFO] PREDICT | severity=LOW threat=BENIGN score=0.2321
+2026-05-23 18:14:53,293 [INFO] 127.0.0.1 - - [23/May/2026 18:14:53] "POST /predict HTTP/1.1" 200 -
+2026-05-23 18:14:53,339 [INFO] PREDICT | severity=CRITICAL threat=RANSOMWARE score=-0.0328
+2026-05-23 18:14:53,339 [INFO] 127.0.0.1 - - [23/May/2026 18:14:53] "POST /predict HTTP/1.1" 200 -
+2026-05-23 18:14:53,389 [INFO] PREDICT | severity=HIGH threat=APT score=-0.0261
+2026-05-23 18:14:53,389 [INFO] 127.0.0.1 - - [23/May/2026 18:14:53] "POST /predict HTTP/1.1" 200 -
+2026-05-23 18:14:53,419 [INFO] PREDICT | severity=HIGH threat=TROJAN score=0.0426
+2026-05-23 18:14:53,419 [INFO] 127.0.0.1 - - [23/May/2026 18:14:53] "POST /predict HTTP/1.1" 200 -
+2026-05-23 18:18:03,122 [INFO] 127.0.0.1 - - [23/May/2026 18:18:03] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2026-05-23 18:19:47,663 [INFO] PREDICT | severity=CRITICAL threat=RANSOMWARE score=-0.0328
+2026-05-23 18:19:47,664 [INFO] 127.0.0.1 - - [23/May/2026 18:19:47] "POST /predict HTTP/1.1" 200 -
+2026-05-23 20:03:32,220 [INFO] 127.0.0.1 - - [23/May/2026 20:03:32] "GET /health HTTP/1.1" 200 -
+2026-05-23 20:05:15,938 [INFO] 127.0.0.1 - - [23/May/2026 20:05:15] "GET /health HTTP/1.1" 200 -
+2026-05-23 20:06:17,069 [INFO] 127.0.0.1 - - [23/May/2026 20:06:17] "GET /health HTTP/1.1" 200 -
+2026-06-01 21:03:51,335 [INFO] 127.0.0.1 - - [01/Jun/2026 21:03:51] "GET /health HTTP/1.1" 200 -
+2026-06-01 21:05:12,947 [INFO] 127.0.0.1 - - [01/Jun/2026 21:05:12] "GET /health HTTP/1.1" 200 -
+2026-06-04 02:48:08,359 [INFO] ✅ Both models loaded successfully
+2026-06-04 02:49:54,449 [INFO] ✅ Both models loaded successfully
+2026-06-04 02:49:57,490 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 02:49:57,490 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 02:54:15,518 [INFO] ✅ Both models loaded successfully
+2026-06-04 02:54:15,544 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 02:54:15,544 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 04:11:35,801 [INFO] ✅ Both models loaded successfully
+2026-06-04 04:11:35,837 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 04:11:35,837 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 04:19:28,172 [INFO] ✅ Both models loaded successfully
+2026-06-04 04:19:28,200 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 04:19:28,200 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 13:15:41,166 [INFO] ✅ Both models loaded successfully
+2026-06-04 13:15:41,195 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 13:15:41,195 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 13:28:21,876 [INFO] ✅ Both models loaded successfully
+2026-06-04 13:28:21,960 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 13:28:21,960 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 13:36:11,538 [INFO] ✅ Both models loaded successfully
+2026-06-04 13:36:11,570 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 13:36:11,570 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 13:39:10,263 [INFO] ✅ Both models loaded successfully
+2026-06-04 13:39:10,329 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 13:39:10,330 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 13:40:46,977 [INFO] ✅ Both models loaded successfully
+2026-06-04 13:40:46,998 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 13:40:46,998 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 13:50:30,162 [INFO] ✅ Both models loaded successfully
+2026-06-04 13:50:30,180 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 13:50:30,180 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 13:51:27,523 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 13:51:27,523 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 13:52:55,637 [INFO] ✅ Both models loaded successfully
+2026-06-04 13:53:58,399 [INFO] ✅ Both models loaded successfully
+2026-06-04 13:53:58,411 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 13:53:58,411 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 13:54:42,695 [INFO] ✅ Both models loaded successfully
+2026-06-04 13:54:56,099 [INFO] ✅ Both models loaded successfully
+2026-06-04 13:54:56,113 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 13:54:56,113 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 13:58:55,250 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 13:58:55,251 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 14:00:47,053 [INFO] ✅ Both models loaded successfully
+2026-06-04 14:00:55,362 [INFO] ✅ Both models loaded successfully
+2026-06-04 14:00:55,382 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 14:00:55,383 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 14:05:01,187 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 14:05:01,187 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 14:12:39,231 [INFO] ✅ Both models loaded successfully
+2026-06-04 14:12:39,232 [INFO] --- MONITORING WAZUH API LIVE ---
+2026-06-04 14:12:39,244 [INFO] --- LIVE STREAMING WAZUH SECURITY EVENTS ---
+2026-06-04 14:12:48,582 [INFO] ✅ Both models loaded successfully
+2026-06-04 14:12:48,583 [INFO] --- MONITORING WAZUH API LIVE ---
+2026-06-04 14:12:48,597 [INFO] --- LIVE STREAMING WAZUH SECURITY EVENTS ---
+2026-06-04 14:12:48,618 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.5:8080
+2026-06-04 14:12:48,619 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-04 14:12:48,646 [INFO] [!] EVENT DETECTED: 2026/06/03 21:35:38 sca: INFO: Evaluation finished for policy '/var/ossec/ruleset/sca/cis_amazon_linux_2023.yml'
+2026-06-04 14:12:48,646 [INFO] [!] SECURITY ALERT: 2026/06/03 22:42:43 wazuh-analysisd: INFO: Connected to 'queue/alerts/ar' (active-response queue)
+2026-06-04 14:12:48,646 [INFO] [!] SECURITY ALERT: 2026/06/03 22:42:43 wazuh-analysisd: INFO: Connected to 'queue/alerts/execq' (exec queue)
+2026-06-04 14:12:48,646 [INFO] [!] EVENT DETECTED: 2026/06/03 22:42:45 sca: INFO: Evaluation finished for policy '/var/ossec/ruleset/sca/cis_amazon_linux_2023.yml'
+2026-06-04 14:12:48,646 [INFO] [!] SECURITY ALERT: 2026/06/03 23:24:06 wazuh-analysisd: INFO: Connected to 'queue/alerts/ar' (active-response queue)
+2026-06-04 14:12:48,646 [INFO] [!] SECURITY ALERT: 2026/06/03 23:24:06 wazuh-analysisd: INFO: Connected to 'queue/alerts/execq' (exec queue)
+2026-06-04 14:12:48,646 [INFO] [!] EVENT DETECTED: 2026/06/03 23:24:10 sca: INFO: Evaluation finished for policy '/var/ossec/ruleset/sca/cis_amazon_linux_2023.yml'
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '80202' was not found and will be ignored in the 'if_sid' option of rule '80203'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '80203' was not found and will be ignored in the 'if_sid' option of rule '80250'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '80202' was not found and will be ignored in the 'if_sid' option of rule '80251'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '80202' was not found and will be ignored in the 'if_sid' option of rule '80253'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '80253' was not found and will be ignored in the 'if_sid' option of rule '80254'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '80780' was not found and will be ignored in the 'if_sid' option of rule '80781'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '80780' was not found and will be ignored in the 'if_sid' option of rule '80782'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '80783' was not found and will be ignored in the 'if_sid' option of rule '80784'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '80783' was not found and will be ignored in the 'if_sid' option of rule '80785'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '80786' was not found and will be ignored in the 'if_sid' option of rule '80787'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '80786' was not found and will be ignored in the 'if_sid' option of rule '80788'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:13 wazuh-analysisd: WARNING: (7617): Signature ID '99905' was not found and will be ignored in the 'if_sid' option of rule '99906'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '80202' was not found and will be ignored in the 'if_sid' option of rule '80203'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '80203' was not found and will be ignored in the 'if_sid' option of rule '80250'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '80202' was not found and will be ignored in the 'if_sid' option of rule '80251'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '80202' was not found and will be ignored in the 'if_sid' option of rule '80253'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '80253' was not found and will be ignored in the 'if_sid' option of rule '80254'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '80780' was not found and will be ignored in the 'if_sid' option of rule '80781'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '80780' was not found and will be ignored in the 'if_sid' option of rule '80782'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '80783' was not found and will be ignored in the 'if_sid' option of rule '80784'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '80783' was not found and will be ignored in the 'if_sid' option of rule '80785'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '80786' was not found and will be ignored in the 'if_sid' option of rule '80787'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '80786' was not found and will be ignored in the 'if_sid' option of rule '80788'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:22:21 wazuh-analysisd: WARNING: (7617): Signature ID '99905' was not found and will be ignored in the 'if_sid' option of rule '99906'.
+2026-06-04 14:12:48,647 [INFO] [!] EVENT DETECTED: 2026/06/04 08:26:25 sca: INFO: Evaluation finished for policy '/var/ossec/ruleset/sca/cis_amazon_linux_2023.yml'

@@ -1,0 +1,55 @@
+<group name='edr_custom,'>
+
+  <rule id='100001' level='12'>
+    <if_matched_sid>5503</if_matched_sid>
+    <description>EDR CRITICAL: Brute force detected</description>
+  </rule>
+
+  <rule id='100002' level='14'>
+    <if_sid>61613</if_sid>
+    <description>EDR CRITICAL: Office spawning shell</description>
+  </rule>
+
+  <rule id='100003' level='14'>
+    <if_sid>61613</if_sid>
+    <description>EDR CRITICAL: PowerShell LOLBin usage</description>
+  </rule>
+
+  <rule id='100004' level='10'>
+    <if_group>syscheck</if_group>
+    <description>EDR HIGH: Executable in /tmp</description>
+  </rule>
+
+  <rule id='100005' level='12'>
+    <if_group>syscheck</if_group>
+    <description>EDR HIGH: New cron job persistence</description>
+  </rule>
+
+  <rule id='100006' level='10'>
+    <if_sid>5710</if_sid>
+    <description>EDR MEDIUM: Port scanning detected</description>
+  </rule>
+
+  <rule id='100007' level='13'>
+    <if_sid>61613</if_sid>
+    <description>EDR HIGH: WMI execution</description>
+  </rule>
+
+  <rule id='100008' level='14'>
+    <if_group>syslog</if_group>
+    <match>sudo.*command not allowed</match>
+    <description>EDR CRITICAL: Unauthorized sudo</description>
+  </rule>
+
+  <rule id='100009' level='15'>
+    <if_group>syslog</if_group>
+    <match>new user added</match>
+    <description>EDR CRITICAL: New user account added</description>
+  </rule>
+
+  <rule id='100010' level='13'>
+    <if_group>syscheck</if_group>
+    <description>EDR HIGH: Fileless malware activity</description>
+  </rule>
+
+</group>

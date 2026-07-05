@@ -1,0 +1,5 @@
+<group name='local,'>
+  <rule id='100000' level='0'>
+    <description>Default local rules file</description>
+  </rule>
+</group>

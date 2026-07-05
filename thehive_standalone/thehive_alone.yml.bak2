@@ -1,0 +1,48 @@
+services:
+  cassandra:
+    image: cassandra:4.0
+    restart: always
+    environment:
+      - CASSANDRA_START_RPC=true
+      - CASSANDRA_CLUSTER_NAME=thehive
+      - MAX_HEAP_SIZE=1G           # RAM ko control karne ke liye taake 137 error na aaye
+      - HEAP_NEWSIZE=256M
+    volumes:
+      - thehive_cassandra-data:/var/lib/cassandra
+    networks:
+      - thehive-net
+    healthcheck:
+      test: ["CMD", "cqlsh", "-e", "describe keyspaces"]
+      interval: 20s
+      timeout: 10s
+      retries: 15
+      start_period: 60s
+
+  thehive:
+    image: strangebee/thehive:5.2
+    restart: always
+    depends_on:
+      - cassandra
+    ports:
+      - "9000:9000"
+    environment:
+      - THEHIVE_CASSANDRA_HOSTNAME=cassandra
+      - JAVA_OPTS=-Xms1g -Xmx1g    # TheHive ki RAM ko 1GB par limit kiya taake crash na ho
+    volumes:
+      # BerkeleyJE local database container ke andar '/data' folder use karta hai, isliye humne mapping ko fix kar diya hai:
+      - thehive_thehive-data:/data 
+    networks:
+      - thehive-net
+
+networks:
+  thehive-net:
+    driver: bridge
+
+volumes:
+  thehive_cassandra-data:
+    external: true
+  thehive_es-data:
+    external: true
+  thehive_thehive-data:
+    external: true
+    name: "e4d1c1091819cfe7f0416490c44a4dfabec6b6df3b5bf32d8c9123d40abc2b70"

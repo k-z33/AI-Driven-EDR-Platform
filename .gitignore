@@ -1,0 +1,7 @@
+*.lime
+*.key
+*.pem
+.env
+__pycache__/
+*.pyc
+config/secrets*
