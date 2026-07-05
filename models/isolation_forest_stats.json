@@ -1,0 +1,12 @@
+{
+  "model": "IsolationForest",
+  "type": "Unsupervised",
+  "n_estimators": 200,
+  "contamination": 0.05,
+  "training_samples": 10500,
+  "normal_accuracy": 96.2,
+  "attack_accuracy": 100.0,
+  "trained_at": "2026-05-22T11:33:41.579622",
+  "threshold_note": "score < -0.1 = anomaly, < -0.3 = critical",
+  "use_case": "Unknown threat detection \u2014 no labels needed"
+}

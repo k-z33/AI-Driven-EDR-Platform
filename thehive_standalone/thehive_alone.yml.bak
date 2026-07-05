@@ -1,0 +1,22 @@
+services:
+  thehive:
+    image: strangebee/thehive:5.2
+    restart: always
+    depends_on:
+      - cassandra
+    ports:
+      - "9000:9000"
+    environment:
+      - THEHIVE_CASSANDRA_HOSTNAME=cassandra
+    networks:
+      - thehive-net
+
+  cassandra:
+    image: cassandra:4.0
+    restart: always
+    networks:
+      - thehive-net
+
+networks:
+  thehive-net:
+    driver: bridge

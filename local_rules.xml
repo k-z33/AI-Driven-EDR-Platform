@@ -1,0 +1,19 @@
+<group name="syslog,errors,">
+  <rule id="110001" level="12">
+    <if_sid>1002</if_sid>
+    <match>EDR: PowerShell activity detected</match>
+    <description>EDR Attack Simulation: Malicious PowerShell Execution Detected</description>
+    <mitre>
+      <id>T1059.001</id>
+    </mitre>
+  </rule>
+
+  <rule id="110002" level="12">
+    <if_sid>1002</if_sid>
+    <match>YARA: Malicious artifact found</match>
+    <description>EDR Forensic Scan: YARA Rule Match for Known Malware Signature</description>
+    <mitre>
+      <id>T1027</id>
+    </mitre>
+  </rule>
+</group>
