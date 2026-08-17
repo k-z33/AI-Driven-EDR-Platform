@@ -12,3 +12,4 @@ ossec_final.conf
 ossec_modified.conf
 wazuh_etc_backup.tar
 *.tar.gz
+wazuh_etc_backup/
