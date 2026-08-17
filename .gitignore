@@ -6,3 +6,9 @@ __pycache__/
 *.pyc
 config/secrets*
 edr-backup.tar.gz
+my_client_keys.txt
+ossec_backup.conf
+ossec_final.conf
+ossec_modified.conf
+wazuh_etc_backup.tar
+*.tar.gz
